@@ -1,0 +1,7 @@
+Django==2.0.1
+bleach==2.1.2
+
+
+# Possible future requirements
+beautifulsoup4==4.4.1
+
