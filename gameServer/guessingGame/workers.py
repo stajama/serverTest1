@@ -2,7 +2,7 @@ import bleach
 from .models import *
 
 def cleanAndCheckNumber(numberString):
-    x = bleach.clean(numberString)
+    x = bleach.clean(str(numberString))
     try:
         x = int(x)
         if x > 100 or x < 1:

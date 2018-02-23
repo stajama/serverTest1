@@ -77,7 +77,7 @@ def guesser(request):
 def guesser2(request):
     if not workers.isGameOver():
         x = int(request.GET['number'])
-        x = cleanAndCheckNumber(x)
+        x = workers.cleanAndCheckNumber(x)
         answer = workers.setAndCheckGuess(x)
         if answer == "Win" or workers.isGameOver():
             GuessThis.objects.all()[0].hasBeenGuessed = True
